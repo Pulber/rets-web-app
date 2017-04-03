@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mysql": "mysql://homestead:secret@192.168.10.10:3306/fundraising",
+  "public": "../public/",
+  "auth": {
+    "idField": "id",
+    "token": {
+      "secret": "L8pZXhAF5Z6wAecoWVMdK5ZN1tjxW4C6TCfrw3m6FFHSMzybVqr52G50Mox8owAcQy3XkTQ8yyQmYgX0+6K/eA=="
+    },
+    "local": {}
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "name": "real-estate",
+  "description": "Real-estate web app.",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src/",
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "repository": {},
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "test": "npm run jshint && npm run mocha",
+    "jshint": "jshint src/. test/. --config",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive",
+    "dev": "vbuild src/assets/index.js --config=vbuild.config.js --watch --dev --dist=./public/assets",
+    "prod": "vbuild src/assets/index.js --config=vbuild.config.js --dist=./public/assets"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "compression": "^1.6.2",
+    "feathers": "^2.1.1",
+    "feathers-authentication": "^0.7.12",
+    "feathers-configuration": "^0.3.3",
+    "feathers-errors": "^2.6.2",
+    "feathers-hooks": "^1.8.1",
+    "feathers-rest": "^1.7.1",
+    "feathers-sequelize": "^1.4.5",
+    "feathers-socketio": "^1.5.2",
+    "lodash": "^4.17.4",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2",
+    "rets-client": "^5.0.2",
+    "sequelize": "^3.30.4",
+    "serve-favicon": "^2.4.2",
+    "vue": "^2.2.6",
+    "vue-resource": "^1.2.1",
+    "vue-router": "^2.3.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "mocha": "^3.2.0",
+    "request": "^2.81.0",
+    "vue-template-loader": "^0.2.4"
+  }
+}
